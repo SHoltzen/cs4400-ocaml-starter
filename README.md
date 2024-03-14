@@ -44,6 +44,13 @@ eval `opam env`
 dune exec ./main.exe
 ```
 
++ OCaml will fail to build if you have unused variables when building with `dune`. If you want
+  to ignore these warnings, you can use the following dune command instead:
+
+```
+dune exec ./main.exe --profile release
+```
+
 + If you set up your environment correctly, you will see the following output:
 
 ```
